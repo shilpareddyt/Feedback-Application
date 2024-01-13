@@ -1,0 +1,73 @@
+.row {
+  display: flex;
+}
+
+.options {
+  color: #FAB426;
+  size: 10px;
+}
+.options:has(#div-good:hover) #div-unlike {
+  opacity: 0.5;
+}
+.options:has(#div-good:hover) #div-notSure {
+  opacity: 0.5;
+}
+
+.options:has(#div-notSure:hover) #div-good {
+  opacity: 0.5;
+}
+.options:has(#div-notSure:hover) #div-unlike {
+  opacity: 0.5;
+}
+.options:has(#div-unlike:hover) #div-notSure {
+  opacity: 0.5;
+}
+
+.options:has(#div-unlike:hover) #div-good {
+  opacity: 0.5;
+}
+
+.animate {
+  position: relative;
+  animation: example 2s ease-in-out both;
+}
+
+@keyframes example {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-600%);
+  }
+}
+
+.scale:hover { 
+  animation : overview 2s;
+}
+@keyframes overview {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-10%);
+  }
+}
+
+
+.moveToLeft {
+  position: relative;
+  animation: moveToLeft 20s ease-in-out both;
+}
+
+
+@keyframes moveToLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-600%);
+  }
+}
+
+
+
